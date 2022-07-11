@@ -11,7 +11,7 @@ import './models/Profesor.js';
 import './models/Alumno_Materia.js';
 import './models/Profesor_Materia.js';
 
-const port=3000;
+const port=4000;
 const hostname='localhost';
 
 
@@ -21,7 +21,7 @@ async function main() {
         await sequelize.sync({force: false});
         console.log('Conexion correcta a la BD');
         app.listen(port, hostname);
-        console.log('Server listening at port 3000');
+        console.log('Server listening at port 4000');
     } catch (error) {
         console.log('No se pudo conectar a la BD' + error);
     }
